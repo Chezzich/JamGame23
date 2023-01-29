@@ -1,0 +1,2181 @@
+fileFormatVersion: 2
+guid: 9a932d1af7d8c704d859c980b7620ab6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 192, z: 192, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 193
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4113cb668078ff142b773fa3d6fc0179
+      internalID: -1580115397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 194
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adc2f30c6982b744913e88628c88653
+      internalID: 1276638641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 194
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466ea1b4926c0dd4d93a507556d0ca33
+      internalID: -216421039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 194
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6af375ef0d2604b8094ddcdb153632
+      internalID: -1718669500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 193
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0266c3ffc93d0fb44bc5888d37485287
+      internalID: 258275883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 194
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e20d1b79a676f74ea131c7c8f383b6d
+      internalID: 460345127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 193
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14d69a6bee3e4646bd7d0b71f3a6c38
+      internalID: 2129970552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 194
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acc5fea582124e46a0cb3436aa0523b
+      internalID: 2097693802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 194
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8de72f0f9dfd64a90de4a561e2bb76
+      internalID: 890238934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 192
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2948a5929b87e6049a93818cbd7d674b
+      internalID: 928112349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 193
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe183e2d7918ffd488d926d515b0a610
+      internalID: -249137043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 193
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f22ebc8466f6e42864c66efec96d09
+      internalID: 679782277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 195
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfa82194430e534b9fbf87f89412dc9
+      internalID: -494865158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 177
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d2e9ac2591bbb4f9156909993a06f1
+      internalID: -1804486962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 178
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96b3fbfa3398c04fa87e11fda09d73b
+      internalID: -1811578224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 178
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8576948ea6410034b8f316d8cdf3c55b
+      internalID: 1768015025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_16
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 178
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40cb731a3f71b84683748b251dd33b5
+      internalID: 2143082270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_17
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 177
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d3f45f2238240468310ed45f8eac5c
+      internalID: 872497666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 178
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2104e560ef95c64ca41908b66ea65e7
+      internalID: 82100632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 177
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbd22b4c76e5704e8145c0662109098
+      internalID: 1881340684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32c09ed2d88ea640a545ebd869d084b
+      internalID: 1476216523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 178
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7aa8811244061e48a6b981d9779b35b
+      internalID: 665594664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_22
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 177
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602f76fd266e24144b64e5cef23fea6c
+      internalID: -971334969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 178
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c2f66c3b15cc74781018b841111bb6
+      internalID: -1840930912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_24
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 178
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598025f3ec3f8aa4498251834fcdb9bc
+      internalID: -1931244561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_25
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 177
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befef254e87db3f4795d1fa0701884ad
+      internalID: -416724171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 161
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4304abde45aecf6428ab80bb8f94e10c
+      internalID: -984233486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_27
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 161
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96aa4b225eb30b0489fb1c09f8eac6e1
+      internalID: 337096519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_28
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 162
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca8b6984a541ed4a87d3eab733de2a6
+      internalID: 5663461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_29
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 161
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3323c455f1e7b644942296ec8c9747e
+      internalID: 711045394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 162
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7736339f1114a004da444fa4f324ba33
+      internalID: 1120917196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 162
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2895e043c1d9a554a902bec0d06abc03
+      internalID: -1307421111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_32
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 165
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb70dd5b57d671044ba9697d9d6031e3
+      internalID: -982392572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_33
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 161
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f60d90ed2a0734694c9547b51c10ee
+      internalID: -1807048316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 161
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2371ab376d8004498b898098ac7d3a
+      internalID: 1232506966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_35
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 161
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb7746b0c675c640a528690f6e8e12a
+      internalID: 330556829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_36
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 161
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f89641782fe28543bbab44e471b65ab
+      internalID: -1407538252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 161
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adffec7861586940a892fdc09b8bd6a
+      internalID: -1990372229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_38
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 162
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a87f68c9fbcd4439ed95b722c95924
+      internalID: 604739480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_39
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 146
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c19c15ddcd16d46a656ad49b2a58ac
+      internalID: -1247790058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_40
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 145
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833f030c860e06e44a33d1bb81831383
+      internalID: 540998748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 145
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6869bea571bb7dd40917e8ae480abfd8
+      internalID: 291689237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_42
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 145
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3460d4bdafd4ffc4e93f79b89ef994b4
+      internalID: 213022034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_43
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 146
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f130378d67c73479764ed951016e47
+      internalID: 897012565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_44
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 145
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1d55ed0da21104ba9d3f04e5af6c6f
+      internalID: -732343340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_45
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 145
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11373f8bcac3b5d4c82f1bf10cac3004
+      internalID: -315077315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_46
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 145
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f99b32e06eb87a408eb4400d6cca9a7
+      internalID: 811217187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_47
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 145
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5ec838e1907f34db86de850541e665
+      internalID: 1582526203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_48
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 146
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc24c839eaeb4d546b352c11d1e3526f
+      internalID: 724106449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_49
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 146
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751c44470f9c6f94a90573f5be0ba564
+      internalID: -1243632918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_50
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 145
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c976bcba7f01e884f997d9fcac4f1e60
+      internalID: 1074023306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_51
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 145
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c3675cc9ebe8449b0ca9f4cf5893ad
+      internalID: -1804683828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_52
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 129
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6f662e5056b7244b9d677bb95de11c
+      internalID: 587948584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 130
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1337625623ddaff43ba6e1a890242732
+      internalID: 1095931129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_54
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 130
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5936479c8eaeecb4d965fbd58fe01e45
+      internalID: -188484704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_55
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 129
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645f977c9f0406340b3058f56194c09a
+      internalID: -1693766551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_56
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 129
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82756545dfa8a0e4f8a4feb1c2b9a346
+      internalID: -1371951030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_57
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 129
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cc74967580cc8439de2ff381c72c37
+      internalID: -1791995763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_58
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 130
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b28333cae577640869f2d0e83a4106
+      internalID: 1495558189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_59
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 129
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216088d2ea5e0ec419b2f65c4ed992f8
+      internalID: -46291771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_60
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 130
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917cface2f5aaeb4090f58e1760fe87d
+      internalID: 170223864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_61
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 129
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746b88bdec827ff44b607511309ad7f4
+      internalID: -525643230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_62
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 130
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60f1a466613d67499bb48a3c03c837a
+      internalID: 617167685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_63
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 130
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c578dd5568a3c44f855d17bb68fe668
+      internalID: -1771887170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_64
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 130
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf5a4ef2e09ddf4b9b6b4d0785f569e
+      internalID: 1982892712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c196b0b1c3ef6154ba291e8e0f43a4fc
+      internalID: 341992719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_66
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 113
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1997a6681e7bf0408915d8c02bb7bed
+      internalID: 715592174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_67
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 115
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f133d3a6d41980841ad3b17ae45d1f2a
+      internalID: -2118443787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_68
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 114
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8154f5129befe46862218bf02e834a
+      internalID: -2914392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_69
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 115
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7339012da833c4f96f8f73711be320
+      internalID: 2097756577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b527ba2a9805c0e4eb3999412de6ed54
+      internalID: 1499213682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_71
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 81
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4881034e7ee271647b4eebb4bc96a33e
+      internalID: -1599674421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_72
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 81
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605c92e1adba46848b78428d4d18ac65
+      internalID: -1637617704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_73
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 64
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe94d3255c959d4db2191c85ff01fed
+      internalID: -742331283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0de22a2ce2088d4eb3082092cafc17e
+      internalID: 325265524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_75
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 33
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d53fdff3a7f104ea18a4ade2ca94e0
+      internalID: 123705351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_76
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e712125ff651adc49bba18df71b14d50
+      internalID: 46575051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_77
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 50
+        width: 44
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd6899567f2c23448b9087e1d973f61
+      internalID: -250925144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_78
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522eb927a9e523c459b2c70286b7dfda
+      internalID: 471798730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_79
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006f9a7d0fe42e148b52774e3c686ad4
+      internalID: 938383659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_80
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a34f1a01514534fb79d685e86011f2
+      internalID: -642039843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_81
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c86b00cc1c4d749b388fa6c449fecb
+      internalID: 1732353052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_82
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fcf6f7aa90ee84d8cf6d5290f36487
+      internalID: -1966855718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d1757ef3763384eb70a0cb30b91904
+      internalID: -1087206029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_84
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 130
+        width: 14
+        height: 12
+      alignment: 9
+      pivot: {x: 3.8270733, y: -0.80351764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381021b9b8671de429108411850ae825
+      internalID: 790959118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_85
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d40c3442a044b458435f8aa5dd72a8
+      internalID: 1323553856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_86
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f39eb6bdec65f543a8df6056dc6a282
+      internalID: 232654145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ce6cdf520f4e149a181cdf95a702dd
+      internalID: 2137409440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_88
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 32
+        width: 1
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5345c910fdaff1949b2e259299018a43
+      internalID: -1152695558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_89
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 65
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e16b3e8bb4e5844a877bde1928f114
+      internalID: -327206722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_90
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 113
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2017518da57807749a9a7bf58659fb7a
+      internalID: -1270824643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_92
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 114
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f39ba8385e1da41935b5903968ed77
+      internalID: 1216437956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farmingTilesheetComplete_91
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 113
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f057080a741b42f4dad58926adb579f3
+      internalID: 965406879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      farmingTilesheetComplete_57: -1791995763
+      farmingTilesheetComplete_73: -742331283
+      farmingTilesheetComplete_80: -642039843
+      farmingTilesheetComplete_71: -1599674421
+      farmingTilesheetComplete_34: 1232506966
+      farmingTilesheetComplete_59: -46291771
+      farmingTilesheetComplete_39: -1247790058
+      farmingTilesheetComplete_2: -216421039
+      farmingTilesheetComplete_20: 1476216523
+      farmingTilesheetComplete_33: -1807048316
+      farmingTilesheetComplete_45: -315077315
+      farmingTilesheetComplete_75: 123705351
+      farmingTilesheetComplete_89: -327206722
+      farmingTilesheetComplete_43: 897012565
+      farmingTilesheetComplete_21: 665594664
+      farmingTilesheetComplete_49: -1243632918
+      farmingTilesheetComplete_88: -1152695558
+      farmingTilesheetComplete_31: -1307421111
+      farmingTilesheetComplete_78: 471798730
+      farmingTilesheetComplete_15: 1768015025
+      farmingTilesheetComplete_16: 2143082270
+      farmingTilesheetComplete_10: -249137043
+      farmingTilesheetComplete_90: -1270824643
+      farmingTilesheetComplete_72: -1637617704
+      farmingTilesheetComplete_76: 46575051
+      farmingTilesheetComplete_40: 540998748
+      farmingTilesheetComplete_81: 1732353052
+      farmingTilesheetComplete_58: 1495558189
+      farmingTilesheetComplete_68: -2914392
+      farmingTilesheetComplete_63: -1771887170
+      farmingTilesheetComplete_0: -1580115397
+      farmingTilesheetComplete_48: 724106449
+      farmingTilesheetComplete_82: -1966855718
+      farmingTilesheetComplete_14: -1811578224
+      farmingTilesheetComplete_87: 2137409440
+      farmingTilesheetComplete_85: 1323553856
+      farmingTilesheetComplete_4: 258275883
+      farmingTilesheetComplete_86: 232654145
+      farmingTilesheetComplete_66: 715592174
+      farmingTilesheetComplete_60: 170223864
+      farmingTilesheetComplete_6: 2129970552
+      farmingTilesheetComplete_23: -1840930912
+      farmingTilesheetComplete_70: 1499213682
+      farmingTilesheetComplete_47: 1582526203
+      farmingTilesheetComplete_50: 1074023306
+      farmingTilesheetComplete_37: -1990372229
+      farmingTilesheetComplete_83: -1087206029
+      farmingTilesheetComplete_29: 711045394
+      farmingTilesheetComplete_41: 291689237
+      farmingTilesheetComplete_13: -1804486962
+      farmingTilesheetComplete_22: -971334969
+      farmingTilesheetComplete_64: 1982892712
+      farmingTilesheetComplete_36: -1407538252
+      farmingTilesheetComplete_35: 330556829
+      farmingTilesheetComplete_52: 587948584
+      farmingTilesheetComplete_27: 337096519
+      farmingTilesheetComplete_91: 965406879
+      farmingTilesheetComplete_25: -416724171
+      farmingTilesheetComplete_26: -984233486
+      farmingTilesheetComplete_79: 938383659
+      farmingTilesheetComplete_7: 2097693802
+      farmingTilesheetComplete_12: -494865158
+      farmingTilesheetComplete_42: 213022034
+      farmingTilesheetComplete_67: -2118443787
+      farmingTilesheetComplete_46: 811217187
+      farmingTilesheetComplete_74: 325265524
+      farmingTilesheetComplete_38: 604739480
+      farmingTilesheetComplete_19: 1881340684
+      farmingTilesheetComplete_11: 679782277
+      farmingTilesheetComplete_30: 1120917196
+      farmingTilesheetComplete_28: 5663461
+      farmingTilesheetComplete_9: 928112349
+      farmingTilesheetComplete_24: -1931244561
+      farmingTilesheetComplete_18: 82100632
+      farmingTilesheetComplete_44: -732343340
+      farmingTilesheetComplete_69: 2097756577
+      farmingTilesheetComplete_32: -982392572
+      farmingTilesheetComplete_77: -250925144
+      farmingTilesheetComplete_1: 1276638641
+      farmingTilesheetComplete_8: 890238934
+      farmingTilesheetComplete_53: 1095931129
+      farmingTilesheetComplete_3: -1718669500
+      farmingTilesheetComplete_51: -1804683828
+      farmingTilesheetComplete_17: 872497666
+      farmingTilesheetComplete_54: -188484704
+      farmingTilesheetComplete_55: -1693766551
+      farmingTilesheetComplete_92: 1216437956
+      farmingTilesheetComplete_62: 617167685
+      farmingTilesheetComplete_65: 341992719
+      farmingTilesheetComplete_84: 790959118
+      farmingTilesheetComplete_5: 460345127
+      farmingTilesheetComplete_56: -1371951030
+      farmingTilesheetComplete_61: -525643230
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
