@@ -40,4 +40,32 @@ public class PlayerController : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    private void OnGUI()
+    {
+        if (Event.current.isKey && Event.current.type == EventType.KeyDown)
+        {
+            if (!busy)
+            {
+                if (Event.current.keyCode == KeyCode.E)
+                {
+                    Click(Vector3Int.zero);
+                }
+            }
+        }
+    }
+
+    private void Click(Vector3Int playerPosition)
+    {
+        if (PublicVars.activeNpc != null)
+        {
+            PublicVars.uiManager.ShowDialogueAtPos(playerPosition, "hello");
+            return;
+        }
+    }
+
+    public void SetBusy(bool isBusy)
+    {
+        busy = isBusy;
+    }
 }

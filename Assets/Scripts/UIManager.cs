@@ -11,9 +11,9 @@ public class UIManager : MonoBehaviour
         PublicVars.uiManager = this;
     }
 
-    public void ShowDialogueAtPos(Vector2 pos, string text)
+    public void ShowDialogueAtPos(Vector3 pos, string text)
     {
-        GameObject dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialogueName"), pos, Quaternion.identity, canvasNode.transform);
+        GameObject dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
         dialogueNode.GetComponent<DialoguePopupScript>().SetText(text);   
     }
 }
