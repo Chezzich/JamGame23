@@ -5,4 +5,6 @@ public class GameResourcesSO : ScriptableObject
 {
     public GameObject[] prefabs;
     public AudioClip[] sounds;
+    public DialogData[] dialogs;
+    public QuestData[] quests;
 }

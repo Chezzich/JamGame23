@@ -6,14 +6,54 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject canvasNode;
 
+    private GameObject dialogueNode;
+    private bool isActiveDialog = false;
+
+    private DialogData activeDialogData;
+    private int phraseNum = 0;
+
     private void Awake()
     {
         PublicVars.uiManager = this;
     }
 
-    public void ShowDialogueAtPos(Vector3 pos, string text)
+    public void ShowDialogueAtPos(Vector3 pos, string dialogueName)
     {
-        GameObject dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
-        dialogueNode.GetComponent<DialoguePopupScript>().SetText(text);   
+        if (!dialogueNode)
+        {
+            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
+        }
+        if (string.IsNullOrEmpty(activeDialogData.Name))
+        {
+            activeDialogData = PublicVars.gameResources.GetDialogue(dialogueName);
+            phraseNum = 0;
+        }
+
+        if (phraseNum < activeDialogData.Phrases.Length)
+        {
+            PublicVars.playerController.SetBusy(true);
+            isActiveDialog = true;
+            
+            dialogueNode.GetComponent<DialoguePopupScript>().SetText(activeDialogData.Phrases[phraseNum]);
+            phraseNum++;
+        }
+        else
+        {
+            FinishDialogue();
+        }
+    }
+
+    public void FinishDialogue()
+    {
+        Destroy(dialogueNode);
+
+        isActiveDialog = false;
+        activeDialogData = new DialogData();
+        PublicVars.playerController.SetBusy(false);
+    }
+
+    public bool IsActiveDialogue()
+    {
+        return isActiveDialog;
     }
 }

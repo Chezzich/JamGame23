@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections;
 using TMPro;
@@ -16,14 +17,16 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private Camera mainCamera;
 
-    [HideInInspector] public bool busy = false;
+    private bool busy = false;
 
     private void Start()
     {
         PublicVars.playerController = this;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        mainCamera = Camera.main;
     }
 
     private void Update()
@@ -45,12 +48,9 @@ public class PlayerController : MonoBehaviour
     {
         if (Event.current.isKey && Event.current.type == EventType.KeyDown)
         {
-            if (!busy)
+            if (Event.current.keyCode == KeyCode.E)
             {
-                if (Event.current.keyCode == KeyCode.E)
-                {
-                    Click(Vector3Int.zero);
-                }
+                Click(GetPlayerCellPosition());
             }
         }
     }
@@ -59,9 +59,20 @@ public class PlayerController : MonoBehaviour
     {
         if (PublicVars.activeNpc != null)
         {
-            PublicVars.uiManager.ShowDialogueAtPos(playerPosition, "hello");
+            var uiPos = mainCamera.WorldToScreenPoint(PublicVars.activeNpc.gameObject.transform.position);
+            PublicVars.uiManager.ShowDialogueAtPos(new Vector3(uiPos.x, uiPos.y + 50), PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName());
             return;
         }
+    }
+
+    private Vector3Int GetPlayerCellPosition()
+    {
+        var map = PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Ground);
+        if (map)
+        {
+            return map.LocalToCell(rb.position);
+        }
+        return Vector3Int.zero;
     }
 
     public void SetBusy(bool isBusy)
