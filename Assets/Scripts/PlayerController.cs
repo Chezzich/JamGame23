@@ -7,6 +7,7 @@ using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 using static UnityEditor.Experimental.GraphView.GraphView;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private Camera mainCamera;
 
     private bool busy = false;
+    private bool isIntro = false;
 
     private void Start()
     {
@@ -27,6 +29,10 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
+
+        var uiPos = mainCamera.WorldToScreenPoint(gameObject.transform.position);
+        PublicVars.uiManager.ShowDialogueAtPos(new Vector3(uiPos.x, uiPos.y + 50), "Intro");
+        isIntro = true;
     }
 
     private void Update()
@@ -57,6 +63,13 @@ public class PlayerController : MonoBehaviour
 
     private void Click(Vector3Int playerPosition)
     {
+        if (isIntro)
+        {
+            var uiPos = mainCamera.WorldToScreenPoint(gameObject.transform.position);
+            PublicVars.uiManager.ShowDialogueAtPos(new Vector3(uiPos.x, uiPos.y + 50), "Intro");
+            return;
+        }
+
         if (PublicVars.activeNpc != null)
         {
             var uiPos = mainCamera.WorldToScreenPoint(PublicVars.activeNpc.gameObject.transform.position);
@@ -79,5 +92,10 @@ public class PlayerController : MonoBehaviour
     public void SetBusy(bool isBusy)
     {
         busy = isBusy;
+    }
+
+    public void SetIsIntro(bool intro)
+    {
+        isIntro = intro;
     }
 }

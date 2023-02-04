@@ -25,6 +25,11 @@ MonoBehaviour:
     - Good job, dear
     - You did hard work
     - It's time to rest
+  - Name: Intro
+    Phrases:
+    - Press "E" to action
+    - Nice weather
+    - Time to talk to my wife
   quests:
   - Name: Quest1
     NextQuestName: Quest2

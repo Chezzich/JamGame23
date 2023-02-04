@@ -19,16 +19,17 @@ public class UIManager : MonoBehaviour
 
     public void ShowDialogueAtPos(Vector3 pos, string dialogueName)
     {
-        if (string.IsNullOrEmpty(activeDialogData.Name))
-        {
-            activeDialogData = PublicVars.gameResources.GetDialogue(dialogueName);
-            phraseNum = 0;
+        if (string.IsNullOrEmpty(dialogueName) && phraseNum == 0)
             return;
-        }
 
         if (!dialogueNode)
         {
             dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
+        }
+        if (string.IsNullOrEmpty(activeDialogData.Name))
+        {
+            activeDialogData = PublicVars.gameResources.GetDialogue(dialogueName);
+            phraseNum = 0;
         }
 
         if (phraseNum < activeDialogData.Phrases.Length)
@@ -52,6 +53,7 @@ public class UIManager : MonoBehaviour
         isActiveDialog = false;
         activeDialogData = new DialogData();
         PublicVars.playerController.SetBusy(false);
+        PublicVars.playerController.SetIsIntro(false);
     }
 
     public bool IsActiveDialogue()
