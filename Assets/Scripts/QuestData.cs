@@ -7,4 +7,6 @@ public struct QuestData
     public string NextQuestName;
     public string StartDialogue;
     public string FinishDialogue;
+    public bool NeedCrops;
+    public string CropName;
 }

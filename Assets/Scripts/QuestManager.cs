@@ -9,8 +9,9 @@ public class Quest
     }
 
     public QuestData questData;
-    public bool isCompleted;
-    public bool startDialogueShowed;
+    private bool isCompleted;
+    private bool startDialogueShowed;
+    private bool finishDialogueShowed;
 
     public string GetCurrentDialogueName()
     {
@@ -20,7 +21,28 @@ public class Quest
             return questData.StartDialogue;
         }
 
-        return isCompleted ? questData.FinishDialogue : "";
+        if (isCompleted && !finishDialogueShowed)
+        {
+            finishDialogueShowed = true;
+            return questData.FinishDialogue;
+        }
+
+        return string.Empty;
+    }
+
+    public void CompleteQuest()
+    {
+        isCompleted = true;
+    }
+
+    public bool IsStartDialogueShowed()
+    {
+        return startDialogueShowed;
+    }
+
+    public bool IsFinishDialogueShowed()
+    {
+        return finishDialogueShowed;
     }
 }
 
@@ -31,6 +53,13 @@ public class QuestManager : MonoBehaviour
     private void Awake()
     {
         PublicVars.questManager = this;
+
+        EventsSystem.OnLaterEffectScreenFaded += OnLaterEffectScreenFaded;
+    }
+
+    private void OnDestroy()
+    {
+        EventsSystem.OnLaterEffectScreenFaded -= OnLaterEffectScreenFaded;
     }
 
     private void Start()
@@ -51,5 +80,10 @@ public class QuestManager : MonoBehaviour
     public void SetNextQuest()
     {
         SetCurrentQuest(GetCurrentQuest().questData.NextQuestName);
+    }
+
+    private void OnLaterEffectScreenFaded()
+    {
+        SetNextQuest();
     }
 }

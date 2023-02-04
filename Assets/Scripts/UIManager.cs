@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class UIManager : MonoBehaviour
 {
@@ -50,14 +51,25 @@ public class UIManager : MonoBehaviour
     {
         Destroy(dialogueNode);
 
+        phraseNum = 0;
         isActiveDialog = false;
         activeDialogData = new DialogData();
         PublicVars.playerController.SetBusy(false);
         PublicVars.playerController.SetIsIntro(false);
+
+        if (PublicVars.questManager.GetCurrentQuest().IsFinishDialogueShowed())
+        {
+            ShowLaterEffect();
+        }
     }
 
     public bool IsActiveDialogue()
     {
         return isActiveDialog;
+    }
+
+    public void ShowLaterEffect()
+    {
+        Instantiate(PublicVars.gameResources.GetPrefabByName("LaterEffect"), canvasNode.transform);
     }
 }

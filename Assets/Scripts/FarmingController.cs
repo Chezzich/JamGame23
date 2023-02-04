@@ -11,9 +11,13 @@ public class FarmingController : MonoBehaviour
 
     [SerializeField] private Vector3Int playerPosOffset;
 
+    private int neededCropsCount;
+
     private void Awake()
     {
         PublicVars.farmingController = this;
+
+        neededCropsCount = PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Farm).GetTilesRangeCount(new Vector3Int(-9999, -9999), new Vector3Int(9999, 9999));
     }
 
     public bool CheckCell(Vector3Int playerCellPosition)
@@ -23,12 +27,12 @@ public class FarmingController : MonoBehaviour
 
         seedControllers.Add(gameObject.AddComponent<SeedController>());
         seedControllers.Last().AddSeed(
-            PublicVars.gameResources.GetSeed("Tomato"),
+            PublicVars.gameResources.GetSeed(PublicVars.questManager.GetCurrentQuest().questData.CropName),
             playerCellPosition + playerPosOffset);
 
-        if (PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Farm).GetUsedTilesCount() == seedControllers.Count)
+        if (neededCropsCount == seedControllers.Count)
         {
-            PublicVars.questManager.GetCurrentQuest().isCompleted = true;
+            PublicVars.questManager.GetCurrentQuest().CompleteQuest();
         }
 
         return true;

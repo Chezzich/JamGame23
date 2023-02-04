@@ -74,6 +74,8 @@ public class GameResourcesScript : MonoBehaviour
                 NextQuestName = quests[name].NextQuestName, 
                 StartDialogue = quests[name].StartDialogue,
                 FinishDialogue = quests[name].FinishDialogue,
+                NeedCrops = quests[name].NeedCrops,
+                CropName = quests[name].CropName,
             };
             return data;
         }

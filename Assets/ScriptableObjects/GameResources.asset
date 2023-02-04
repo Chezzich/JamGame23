@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 3698775734287555125, guid: 986b37c64853a1544afd0e367a8c0255, type: 3}
+  - {fileID: 4938463100876215458, guid: 5ed6b096ad5ac8a40ac2c8f30c297967, type: 3}
   sounds: []
   dialogs:
   - Name: Quest1StartDialogue
@@ -35,6 +36,8 @@ MonoBehaviour:
     NextQuestName: Quest2
     StartDialogue: Quest1StartDialogue
     FinishDialogue: Quest1FinishDialogue
+    NeedCrops: 1
+    CropName: Tomato
   seeds:
   - seedName: Tomato
     tile: {fileID: 11400000, guid: c1fcdb1b1559ced4d8ad05ddc00022b7, type: 2}

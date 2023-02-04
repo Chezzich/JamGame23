@@ -76,7 +76,11 @@ public class PlayerController : MonoBehaviour
             PublicVars.uiManager.ShowDialogueAtPos(new Vector3(uiPos.x, uiPos.y + 50), PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName());
             return;
         }
-        PublicVars.farmingController.CheckCell(playerPosition);
+
+        if (PublicVars.questManager.GetCurrentQuest().IsStartDialogueShowed() && PublicVars.questManager.GetCurrentQuest().questData.NeedCrops)
+        {
+            PublicVars.farmingController.CheckCell(playerPosition);
+        }
     }
 
     private Vector3Int GetPlayerCellPosition()
