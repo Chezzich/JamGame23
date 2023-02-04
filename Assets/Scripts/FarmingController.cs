@@ -30,7 +30,7 @@ public class FarmingController : MonoBehaviour
             PublicVars.gameResources.GetSeed(PublicVars.questManager.GetCurrentQuest().questData.CropName),
             playerCellPosition + playerPosOffset);
 
-        //if (neededCropsCount == seedControllers.Count)
+        if (neededCropsCount == seedControllers.Count)
         {
             PublicVars.questManager.GetCurrentQuest().CompleteQuest();
             seedControllers.Clear();

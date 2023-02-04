@@ -210,6 +210,6 @@ MonoBehaviour:
     ResetCrops: 0
   seeds:
   - seedName: Tomato
-    tile: {fileID: 11400000, guid: c1fcdb1b1559ced4d8ad05ddc00022b7, type: 2}
+    tile: {fileID: 11400000, guid: 2b576411252c69c42816492a74505304, type: 2}
   - seedName: Carrot
     tile: {fileID: 11400000, guid: 2b576411252c69c42816492a74505304, type: 2}
