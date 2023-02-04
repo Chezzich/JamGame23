@@ -25,6 +25,9 @@ public class FarmingController : MonoBehaviour
         if (PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Farm).GetTile(playerCellPosition) is null) 
             return false;
 
+        if (PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Seeds).GetTile(playerCellPosition))
+            return false;
+
         seedControllers.Add(gameObject.AddComponent<SeedController>());
         seedControllers.Last().AddSeed(
             PublicVars.gameResources.GetSeed(PublicVars.questManager.GetCurrentQuest().questData.CropName),
@@ -33,9 +36,14 @@ public class FarmingController : MonoBehaviour
         if (neededCropsCount == seedControllers.Count)
         {
             PublicVars.questManager.GetCurrentQuest().CompleteQuest();
-            seedControllers.Clear();
+            ClearSeeds();
         }
 
         return true;
+    }
+
+    public void ClearSeeds()
+    {
+        seedControllers.Clear();
     }
 }

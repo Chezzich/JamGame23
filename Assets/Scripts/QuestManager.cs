@@ -109,6 +109,7 @@ public class QuestManager : MonoBehaviour
         if (GetCurrentQuest().questData.ResetCrops)
         {
             PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Seeds).ClearAllTiles();
+            PublicVars.farmingController.ClearSeeds();
         }
         SetNextQuest();
     }
