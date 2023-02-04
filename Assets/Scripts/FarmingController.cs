@@ -26,6 +26,11 @@ public class FarmingController : MonoBehaviour
             PublicVars.gameResources.GetSeed("Tomato"),
             playerCellPosition + playerPosOffset);
 
+        if (PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Farm).GetUsedTilesCount() == seedControllers.Count)
+        {
+            PublicVars.questManager.GetCurrentQuest().isCompleted = true;
+        }
+
         return true;
     }
 }

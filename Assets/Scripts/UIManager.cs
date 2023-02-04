@@ -19,14 +19,16 @@ public class UIManager : MonoBehaviour
 
     public void ShowDialogueAtPos(Vector3 pos, string dialogueName)
     {
-        if (!dialogueNode)
-        {
-            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
-        }
         if (string.IsNullOrEmpty(activeDialogData.Name))
         {
             activeDialogData = PublicVars.gameResources.GetDialogue(dialogueName);
             phraseNum = 0;
+            return;
+        }
+
+        if (!dialogueNode)
+        {
+            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
         }
 
         if (phraseNum < activeDialogData.Phrases.Length)

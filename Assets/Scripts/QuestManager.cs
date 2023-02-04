@@ -10,10 +10,17 @@ public class Quest
 
     public QuestData questData;
     public bool isCompleted;
+    public bool startDialogueShowed;
 
     public string GetCurrentDialogueName()
     {
-        return isCompleted ? questData.FinishDialogue : questData.StartDialogue;
+        if (!startDialogueShowed)
+        {
+            startDialogueShowed = true;
+            return questData.StartDialogue;
+        }
+
+        return isCompleted ? questData.FinishDialogue : "";
     }
 }
 
