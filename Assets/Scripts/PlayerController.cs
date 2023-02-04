@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-        if (dialogueCheckTimer > 2f)
+        if (dialogueCheckTimer > 2f && !busy)
         {
             dialogueCheckTimer = 0;
             var uiPos = mainCamera.WorldToScreenPoint(gameObject.transform.position);
@@ -80,6 +80,11 @@ public class PlayerController : MonoBehaviour
             var uiPos = mainCamera.WorldToScreenPoint(PublicVars.activeNpc.gameObject.transform.position);
             PublicVars.uiManager.ShowDialogueAtPos(new Vector3(uiPos.x, uiPos.y + 50), PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName());
             return;
+        }
+
+        if (PublicVars.uiManager.IsActiveDialogue())
+        {
+            PublicVars.uiManager.ShowDialogueAtPos(Vector3.zero, PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName());
         }
 
         if (PublicVars.questManager.GetCurrentQuest().IsStartDialogueShowed() && PublicVars.questManager.GetCurrentQuest().questData.NeedCrops)

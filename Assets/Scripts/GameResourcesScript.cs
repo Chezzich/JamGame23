@@ -60,7 +60,10 @@ public class GameResourcesScript : MonoBehaviour
     {
         if (dialogs.ContainsKey(name))
         {
-            var data = new DialogData() { Name = name, Phrases = dialogs[name].Phrases };
+            var data = new DialogData() { Name = name, 
+                Phrases = dialogs[name].Phrases,
+                IsPlayerDialogue = dialogs[name].IsPlayerDialogue
+            };
             return data;
         }
         return new DialogData();
@@ -78,6 +81,7 @@ public class GameResourcesScript : MonoBehaviour
                 CropName = quests[name].CropName,
                 ShowLaterEffect = quests[name].ShowLaterEffect,
                 TilemapToShow = quests[name].TilemapToShow,
+                ResetCrops = quests[name].ResetCrops
             };
             return data;
         }

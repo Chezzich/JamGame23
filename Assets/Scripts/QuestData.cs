@@ -11,4 +11,5 @@ public struct QuestData
     public string CropName;
     public bool ShowLaterEffect;
     public TilemapName TilemapToShow;
+    public bool ResetCrops;
 }

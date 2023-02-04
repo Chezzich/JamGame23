@@ -23,13 +23,14 @@ public class UIManager : MonoBehaviour
         if (PublicVars.questManager.GetCurrentQuest().questData.Name == null)
             return;
 
-        if (PublicVars.gameResources.GetDialogue(PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName()).IsPlayerDialogue)
+        if (PublicVars.gameResources.GetDialogue(PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName()).IsPlayerDialogue
+            && phraseNum == 0)
         {
             ShowDialogueAtPos(pos, PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName());
         }
     }
 
-    public void ShowDialogueAtPos(Vector3 pos, string dialogueName)
+    public void ShowDialogueAtPos(Vector3 spawnPos, string dialogueName)
     {
         if (string.IsNullOrEmpty(dialogueName) && phraseNum == 0)
             return;
@@ -42,7 +43,7 @@ public class UIManager : MonoBehaviour
         if (!dialogueNode)
         {
             var prefabName = activeDialogData.IsPlayerDialogue ? "DialoguePopupMan" : "DialoguePopup";
-            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName(prefabName), pos, Quaternion.identity, canvasNode.transform);
+            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName(prefabName), spawnPos, Quaternion.identity, canvasNode.transform);
         }
 
         if (phraseNum < activeDialogData.Phrases.Length)
@@ -70,10 +71,15 @@ public class UIManager : MonoBehaviour
         PublicVars.playerController.SetIsIntro(false);
 
         PublicVars.questManager.GetCurrentQuest().FinishDialogue();
-        if (PublicVars.questManager.GetCurrentQuest().IsFinishDialogueShowed() 
+        if (PublicVars.questManager.GetCurrentQuest().IsFinishDialogueShowed()
             || string.IsNullOrEmpty(PublicVars.questManager.GetCurrentQuest().questData.FinishDialogue))
         {
             PublicVars.questManager.FinishQuest();
+        }
+        else if (!string.IsNullOrEmpty(PublicVars.questManager.GetCurrentQuest().questData.FinishDialogue)
+            && !PublicVars.questManager.GetCurrentQuest().questData.NeedCrops)
+        {
+            PublicVars.questManager.GetCurrentQuest().CompleteQuest();
         }
     }
 

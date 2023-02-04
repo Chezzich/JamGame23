@@ -102,6 +102,10 @@ public class QuestManager : MonoBehaviour
             {
                 PublicVars.tilemapsHolder.GetTilemapByName(GetCurrentQuest().questData.TilemapToShow).gameObject.SetActive(true);
             }
+            if (GetCurrentQuest().questData.ResetCrops)
+            {
+                PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Seeds).ClearAllTiles();
+            }
             SetNextQuest();
         }
     }

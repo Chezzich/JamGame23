@@ -35,6 +35,19 @@ MonoBehaviour:
     - Press "E" to action
     - Nice weather
     - Time to talk to my wife
+  - Name: Quest2StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Oh no, crops were destroyed by wind
+    - What should i do?
+    - Time to talk to my wife
+  - Name: Quest2FinishDialogue
+    IsPlayerDialogue: 0
+    Phrases:
+    - Hmm, wind?
+    - Don't worry
+    - My ancestors defended with threes
+    - Lets try it!
   quests:
   - Name: Intro
     NextQuestName: Quest1
@@ -44,6 +57,7 @@ MonoBehaviour:
     CropName: 
     ShowLaterEffect: 0
     TilemapToShow: 0
+    ResetCrops: 0
   - Name: Quest1
     NextQuestName: Quest2
     StartDialogue: Quest1StartDialogue
@@ -51,7 +65,26 @@ MonoBehaviour:
     NeedCrops: 1
     CropName: Tomato
     ShowLaterEffect: 1
+    TilemapToShow: 0
+    ResetCrops: 1
+  - Name: Quest2
+    NextQuestName: Quest3
+    StartDialogue: Quest2StartDialogue
+    FinishDialogue: Quest2FinishDialogue
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 1
     TilemapToShow: 3
+    ResetCrops: 1
+  - Name: Quest3
+    NextQuestName: Quest4
+    StartDialogue: Quest3StartDialogue
+    FinishDialogue: Quest3FinishDialogue
+    NeedCrops: 1
+    CropName: Tomato
+    ShowLaterEffect: 1
+    TilemapToShow: 0
+    ResetCrops: 1
   seeds:
   - seedName: Tomato
     tile: {fileID: 11400000, guid: c1fcdb1b1559ced4d8ad05ddc00022b7, type: 2}
