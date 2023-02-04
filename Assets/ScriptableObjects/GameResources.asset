@@ -15,6 +15,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 3698775734287555125, guid: 986b37c64853a1544afd0e367a8c0255, type: 3}
   - {fileID: 4938463100876215458, guid: 5ed6b096ad5ac8a40ac2c8f30c297967, type: 3}
+  - {fileID: 3337275427803275414, guid: de5226081d0924547b8ac1ac77b7c9c1, type: 3}
   sounds: []
   dialogs:
   - Name: Quest1StartDialogue
