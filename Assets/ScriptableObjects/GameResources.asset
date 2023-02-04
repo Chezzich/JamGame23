@@ -16,13 +16,14 @@ MonoBehaviour:
   - {fileID: 3698775734287555125, guid: 986b37c64853a1544afd0e367a8c0255, type: 3}
   - {fileID: 4938463100876215458, guid: 5ed6b096ad5ac8a40ac2c8f30c297967, type: 3}
   - {fileID: 3337275427803275414, guid: de5226081d0924547b8ac1ac77b7c9c1, type: 3}
+  - {fileID: 4233964952303132092, guid: 89425b996bff2dd4ebca57bfca10982c, type: 3}
   sounds: []
   dialogs:
   - Name: Quest1StartDialogue
     IsPlayerDialogue: 0
     Phrases:
     - Hello, dear
-    - It's time to plant a crop
+    - It's time to plant crops
   - Name: Quest1FinishDialogue
     IsPlayerDialogue: 0
     Phrases:
@@ -48,6 +49,74 @@ MonoBehaviour:
     - Don't worry
     - My ancestors defended with threes
     - Lets try it!
+  - Name: Quest3StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Problem was solved
+    - Now it's time to plant crops
+  - Name: Quest3FinishDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Nice, now i can rest
+  - Name: Quest4StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Oh no, crops were destroyed again
+    - Maybe not enough water
+    - Time to talk to my wife
+  - Name: Quest4FinishDialogue
+    IsPlayerDialogue: 0
+    Phrases:
+    - It seems like plants hadn't enough water
+    - But don't worry
+    - My ancestors had solution
+    - Now we will add water spreading system
+    - Lets try it!
+  - Name: Quest5StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Another day, another level
+    - Time to plant crops
+  - Name: Quest5FinishDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Hope, this time all will be good
+  - Name: Quest6StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - Oh no, crops were destroyed again
+    - Seems like insects ate them
+    - Time to talk to my wife
+  - Name: Quest6FinishDialogue
+    IsPlayerDialogue: 0
+    Phrases:
+    - Sorry dear, but i don't know what shall we do
+    - My ancestors hadn't this problem
+    - But i believe that we can do something!
+    - We just need to take some time to think
+  - Name: Quest7StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - What can we do?
+    - This time i need to think by myself
+    - ...
+    - Oh, i have one idea!
+  - Name: Quest8StartDialogue
+    IsPlayerDialogue: 1
+    Phrases:
+    - It works!
+    - Now it's time to talk to my wife
+  - Name: Quest8FinishDialogue
+    IsPlayerDialogue: 0
+    Phrases:
+    - Nice work my dear!
+    - I hope that all our problems are solved
+    - Let's do some good work
+    - It's time to plant crops
+  - Name: EndGame
+    IsPlayerDialogue: 0
+    Phrases:
+    - EndGame
   quests:
   - Name: Intro
     NextQuestName: Quest1
@@ -85,6 +154,60 @@ MonoBehaviour:
     ShowLaterEffect: 1
     TilemapToShow: 0
     ResetCrops: 1
+  - Name: Quest4
+    NextQuestName: Quest5
+    StartDialogue: Quest4StartDialogue
+    FinishDialogue: Quest4FinishDialogue
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 1
+    TilemapToShow: 5
+    ResetCrops: 1
+  - Name: Quest5
+    NextQuestName: Quest6
+    StartDialogue: Quest5StartDialogue
+    FinishDialogue: Quest5FinishDialogue
+    NeedCrops: 1
+    CropName: Tomato
+    ShowLaterEffect: 1
+    TilemapToShow: 0
+    ResetCrops: 1
+  - Name: Quest6
+    NextQuestName: Quest7
+    StartDialogue: Quest6StartDialogue
+    FinishDialogue: Quest6FinishDialogue
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 0
+    TilemapToShow: 0
+    ResetCrops: 0
+  - Name: Quest7
+    NextQuestName: Quest8
+    StartDialogue: Quest7StartDialogue
+    FinishDialogue: 
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 1
+    TilemapToShow: 6
+    ResetCrops: 1
+  - Name: Quest8
+    NextQuestName: EndGame
+    StartDialogue: Quest8StartDialogue
+    FinishDialogue: Quest8FinishDialogue
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 0
+    TilemapToShow: 0
+    ResetCrops: 1
+  - Name: EndGame
+    NextQuestName: 
+    StartDialogue: EndGame
+    FinishDialogue: 
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 0
+    TilemapToShow: 0
+    ResetCrops: 0
   seeds:
   - seedName: Tomato
     tile: {fileID: 11400000, guid: c1fcdb1b1559ced4d8ad05ddc00022b7, type: 2}

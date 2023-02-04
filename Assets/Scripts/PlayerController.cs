@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private bool busy = false;
     private bool isIntro = false;
+    private bool canQuit = false;
 
     private float dialogueCheckTimer = 999f;
     private Vector3 defaultPos;
@@ -61,7 +62,12 @@ public class PlayerController : MonoBehaviour
         {
             if (Event.current.keyCode == KeyCode.E)
             {
-                Click(GetPlayerCellPosition());
+                if (canQuit)
+                {
+                    Application.Quit();
+                }
+                if (PublicVars.questManager.GetCurrentQuest().questData.Name != "EndGame")
+                    Click(GetPlayerCellPosition());
             }
         }
     }
@@ -111,6 +117,11 @@ public class PlayerController : MonoBehaviour
     public void SetIsIntro(bool intro)
     {
         isIntro = intro;
+    }
+
+    public void SetCanQuit(bool quit)
+    {
+        canQuit = quit;
     }
 
     public void ResetPos()

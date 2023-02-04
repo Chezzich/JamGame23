@@ -10,7 +10,9 @@ public enum TilemapName
     Ground,
     Farm,
     Trees,
-    Seeds
+    Seeds,
+    WaterPlants,
+    Chickens
 }
 
 public class TilemapsHolder : MonoBehaviour

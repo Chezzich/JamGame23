@@ -90,24 +90,27 @@ public class QuestManager : MonoBehaviour
 
     public void SetNextQuest()
     {
+        if (GetCurrentQuest().questData.NextQuestName == "EndGame")
+        {
+            PublicVars.playerController.SetBusy(true);
+            PublicVars.uiManager.ShowEndGame();
+        }
         SetCurrentQuest(GetCurrentQuest().questData.NextQuestName);
+
     }
 
     private void OnLaterEffectScreenFaded()
     {
-        if (GetCurrentQuest().IsFinishDialogueShowed())
+        PublicVars.playerController.ResetPos();
+        if (GetCurrentQuest().questData.TilemapToShow != TilemapName.None)
         {
-            PublicVars.playerController.ResetPos();
-            if (GetCurrentQuest().questData.TilemapToShow != TilemapName.None)
-            {
-                PublicVars.tilemapsHolder.GetTilemapByName(GetCurrentQuest().questData.TilemapToShow).gameObject.SetActive(true);
-            }
-            if (GetCurrentQuest().questData.ResetCrops)
-            {
-                PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Seeds).ClearAllTiles();
-            }
-            SetNextQuest();
+            PublicVars.tilemapsHolder.GetTilemapByName(GetCurrentQuest().questData.TilemapToShow).gameObject.SetActive(true);
         }
+        if (GetCurrentQuest().questData.ResetCrops)
+        {
+            PublicVars.tilemapsHolder.GetTilemapByName(TilemapName.Seeds).ClearAllTiles();
+        }
+        SetNextQuest();
     }
 
     public void FinishQuest()

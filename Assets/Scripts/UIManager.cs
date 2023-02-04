@@ -92,4 +92,9 @@ public class UIManager : MonoBehaviour
     {
         Instantiate(PublicVars.gameResources.GetPrefabByName("LaterEffect"), canvasNode.transform);
     }
+
+    public void ShowEndGame()
+    {
+        Instantiate(PublicVars.gameResources.GetPrefabByName("EndGameEffect"), canvasNode.transform);
+    }
 }
