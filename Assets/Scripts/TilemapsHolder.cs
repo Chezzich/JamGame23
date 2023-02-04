@@ -8,7 +8,8 @@ public enum TilemapName
 {
     Ground,
     Farm,
-    Trees
+    Trees,
+    Seeds
 }
 
 public class TilemapsHolder : MonoBehaviour

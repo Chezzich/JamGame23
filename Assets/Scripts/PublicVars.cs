@@ -5,7 +5,7 @@ using UnityEngine;
 public static class PublicVars
 {
     public static AudioManager audioManager;
-
+    public static FarmingController farmingController;
     public static GameObject activeNpc;
 
     public static GameResourcesScript gameResources;

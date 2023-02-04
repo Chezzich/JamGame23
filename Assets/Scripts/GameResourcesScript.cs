@@ -9,6 +9,7 @@ public class GameResourcesScript : MonoBehaviour
     private Dictionary<string, AudioClip> sounds;
     private Dictionary<string, DialogData> dialogs;
     private Dictionary<string, QuestData> quests;
+    private Dictionary<string, Seed> seeds;
 
     private void Awake()
     {
@@ -33,6 +34,11 @@ public class GameResourcesScript : MonoBehaviour
         foreach (var quest in resourcesSO.quests)
         {
             quests.Add(quest.Name, quest);
+        }
+        seeds = new Dictionary<string, Seed>();
+        foreach (var seed in resourcesSO.seeds)
+        {
+            seeds.Add(seed.seedName, seed);
         }
     }
 
@@ -72,5 +78,12 @@ public class GameResourcesScript : MonoBehaviour
             return data;
         }
         return new QuestData();
+    }
+
+    public Seed GetSeed(string name)
+    {
+        if (seeds.ContainsKey(name))
+            return seeds[name];
+        return null;
     }
 }

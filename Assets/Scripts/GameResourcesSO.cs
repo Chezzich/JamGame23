@@ -7,4 +7,5 @@ public class GameResourcesSO : ScriptableObject
     public AudioClip[] sounds;
     public DialogData[] dialogs;
     public QuestData[] quests;
+    public Seed[] seeds;
 }
