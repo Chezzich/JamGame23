@@ -97,6 +97,7 @@ public class QuestManager : MonoBehaviour
     {
         if (GetCurrentQuest().IsFinishDialogueShowed())
         {
+            PublicVars.playerController.ResetPos();
             if (GetCurrentQuest().questData.TilemapToShow != TilemapName.None)
             {
                 PublicVars.tilemapsHolder.GetTilemapByName(GetCurrentQuest().questData.TilemapToShow).gameObject.SetActive(true);

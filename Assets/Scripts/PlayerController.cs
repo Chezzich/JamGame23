@@ -1,13 +1,4 @@
-using Cinemachine;
-using System;
-using System.Collections;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.SceneManagement;
-using UnityEngine.Tilemaps;
-using static UnityEditor.Experimental.GraphView.GraphView;
-using static UnityEditor.PlayerSettings;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,7 +14,8 @@ public class PlayerController : MonoBehaviour
     private bool busy = false;
     private bool isIntro = false;
 
-    private float dialogueCheckTimer = 999f; 
+    private float dialogueCheckTimer = 999f;
+    private Vector3 defaultPos;
 
     private void Start()
     {
@@ -31,6 +23,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
+
+        defaultPos = gameObject.transform.position;
 
         var uiPos = mainCamera.WorldToScreenPoint(gameObject.transform.position);
         PublicVars.uiManager.ShowDialogueAtPos(new Vector3(uiPos.x, uiPos.y + 50), "Intro");
@@ -112,5 +106,10 @@ public class PlayerController : MonoBehaviour
     public void SetIsIntro(bool intro)
     {
         isIntro = intro;
+    }
+
+    public void ResetPos()
+    {
+        gameObject.transform.position = defaultPos;
     }
 }
