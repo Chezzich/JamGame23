@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class UIManager : MonoBehaviour
 {
@@ -50,7 +47,7 @@ public class UIManager : MonoBehaviour
         {
             PublicVars.playerController.SetBusy(true);
             isActiveDialog = true;
-            
+
             dialogueNode.GetComponent<DialoguePopupScript>().SetText(activeDialogData.Phrases[phraseNum]);
             phraseNum++;
         }
