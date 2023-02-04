@@ -18,19 +18,31 @@ public class UIManager : MonoBehaviour
         PublicVars.uiManager = this;
     }
 
+    public void ShowPlayerDialogueIfNeeded(Vector3 pos)
+    {
+        if (PublicVars.questManager.GetCurrentQuest().questData.Name == null)
+            return;
+
+        if (PublicVars.gameResources.GetDialogue(PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName()).IsPlayerDialogue)
+        {
+            ShowDialogueAtPos(pos, PublicVars.questManager.GetCurrentQuest().GetCurrentDialogueName());
+        }
+    }
+
     public void ShowDialogueAtPos(Vector3 pos, string dialogueName)
     {
         if (string.IsNullOrEmpty(dialogueName) && phraseNum == 0)
             return;
 
-        if (!dialogueNode)
-        {
-            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName("DialoguePopup"), pos, Quaternion.identity, canvasNode.transform);
-        }
         if (string.IsNullOrEmpty(activeDialogData.Name))
         {
             activeDialogData = PublicVars.gameResources.GetDialogue(dialogueName);
             phraseNum = 0;
+        }
+        if (!dialogueNode)
+        {
+            var prefabName = activeDialogData.IsPlayerDialogue ? "DialoguePopupMan" : "DialoguePopup";
+            dialogueNode = Instantiate(PublicVars.gameResources.GetPrefabByName(prefabName), pos, Quaternion.identity, canvasNode.transform);
         }
 
         if (phraseNum < activeDialogData.Phrases.Length)
@@ -57,9 +69,11 @@ public class UIManager : MonoBehaviour
         PublicVars.playerController.SetBusy(false);
         PublicVars.playerController.SetIsIntro(false);
 
-        if (PublicVars.questManager.GetCurrentQuest().IsFinishDialogueShowed())
+        PublicVars.questManager.GetCurrentQuest().FinishDialogue();
+        if (PublicVars.questManager.GetCurrentQuest().IsFinishDialogueShowed() 
+            || string.IsNullOrEmpty(PublicVars.questManager.GetCurrentQuest().questData.FinishDialogue))
         {
-            ShowLaterEffect();
+            PublicVars.questManager.FinishQuest();
         }
     }
 

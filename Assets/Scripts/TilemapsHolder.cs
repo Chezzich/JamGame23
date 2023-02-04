@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 
 public enum TilemapName
 {
+    None,
     Ground,
     Farm,
     Trees,

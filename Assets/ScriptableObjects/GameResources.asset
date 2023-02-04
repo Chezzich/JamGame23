@@ -19,26 +19,39 @@ MonoBehaviour:
   sounds: []
   dialogs:
   - Name: Quest1StartDialogue
+    IsPlayerDialogue: 0
     Phrases:
     - Hello, dear
     - It's time to plant a crop
   - Name: Quest1FinishDialogue
+    IsPlayerDialogue: 0
     Phrases:
     - Good job, dear
     - You did hard work
     - It's time to rest
   - Name: Intro
+    IsPlayerDialogue: 1
     Phrases:
     - Press "E" to action
     - Nice weather
     - Time to talk to my wife
   quests:
+  - Name: Intro
+    NextQuestName: Quest1
+    StartDialogue: Intro
+    FinishDialogue: 
+    NeedCrops: 0
+    CropName: 
+    ShowLaterEffect: 0
+    TilemapToShow: 0
   - Name: Quest1
     NextQuestName: Quest2
     StartDialogue: Quest1StartDialogue
     FinishDialogue: Quest1FinishDialogue
     NeedCrops: 1
     CropName: Tomato
+    ShowLaterEffect: 1
+    TilemapToShow: 3
   seeds:
   - seedName: Tomato
     tile: {fileID: 11400000, guid: c1fcdb1b1559ced4d8ad05ddc00022b7, type: 2}

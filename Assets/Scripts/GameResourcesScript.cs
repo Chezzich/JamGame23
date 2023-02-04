@@ -76,6 +76,8 @@ public class GameResourcesScript : MonoBehaviour
                 FinishDialogue = quests[name].FinishDialogue,
                 NeedCrops = quests[name].NeedCrops,
                 CropName = quests[name].CropName,
+                ShowLaterEffect = quests[name].ShowLaterEffect,
+                TilemapToShow = quests[name].TilemapToShow,
             };
             return data;
         }

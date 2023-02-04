@@ -9,4 +9,6 @@ public struct QuestData
     public string FinishDialogue;
     public bool NeedCrops;
     public string CropName;
+    public bool ShowLaterEffect;
+    public TilemapName TilemapToShow;
 }

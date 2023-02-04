@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private bool busy = false;
     private bool isIntro = false;
 
+    private float dialogueCheckTimer = 999f; 
+
     private void Start()
     {
         PublicVars.playerController = this;
@@ -48,6 +50,15 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+        if (dialogueCheckTimer > 2f)
+        {
+            dialogueCheckTimer = 0;
+            var uiPos = mainCamera.WorldToScreenPoint(gameObject.transform.position);
+            PublicVars.uiManager.ShowPlayerDialogueIfNeeded(new Vector3(uiPos.x, uiPos.y + 50));
+        }
+
+        dialogueCheckTimer += Time.deltaTime;
     }
 
     private void OnGUI()

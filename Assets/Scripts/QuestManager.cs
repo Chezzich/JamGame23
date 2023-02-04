@@ -17,13 +17,11 @@ public class Quest
     {
         if (!startDialogueShowed)
         {
-            startDialogueShowed = true;
             return questData.StartDialogue;
         }
 
         if (isCompleted && !finishDialogueShowed)
         {
-            finishDialogueShowed = true;
             return questData.FinishDialogue;
         }
 
@@ -43,6 +41,19 @@ public class Quest
     public bool IsFinishDialogueShowed()
     {
         return finishDialogueShowed;
+    }
+
+    public void FinishDialogue()
+    {
+        if (!startDialogueShowed)
+        {
+            startDialogueShowed = true;
+        }
+
+        if (isCompleted && !finishDialogueShowed)
+        {
+            finishDialogueShowed = true;
+        }
     }
 }
 
@@ -64,7 +75,7 @@ public class QuestManager : MonoBehaviour
 
     private void Start()
     {
-        SetCurrentQuest("Quest1"); // start quest
+        SetCurrentQuest("Intro"); // start quest
     }
 
     public void SetCurrentQuest(string questName)
@@ -84,6 +95,25 @@ public class QuestManager : MonoBehaviour
 
     private void OnLaterEffectScreenFaded()
     {
-        SetNextQuest();
+        if (GetCurrentQuest().IsFinishDialogueShowed())
+        {
+            if (GetCurrentQuest().questData.TilemapToShow != TilemapName.None)
+            {
+                PublicVars.tilemapsHolder.GetTilemapByName(GetCurrentQuest().questData.TilemapToShow).gameObject.SetActive(true);
+            }
+            SetNextQuest();
+        }
+    }
+
+    public void FinishQuest()
+    {
+        if (GetCurrentQuest().questData.ShowLaterEffect)
+        {
+            PublicVars.uiManager.ShowLaterEffect();
+        }
+        else
+        {
+            SetNextQuest();
+        }
     }
 }
