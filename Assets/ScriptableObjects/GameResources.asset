@@ -92,6 +92,7 @@ MonoBehaviour:
     Phrases:
     - Sorry dear, but i don't know what shall we do
     - My ancestors hadn't this problem
+    - We had no insects on our farm
     - But i believe that we can do something!
     - We just need to take some time to think
   - Name: Quest7StartDialogue
@@ -110,9 +111,9 @@ MonoBehaviour:
     IsPlayerDialogue: 0
     Phrases:
     - Nice work my dear!
+    - Chickens was a great idea!
     - I hope that all our problems are solved
     - Let's do some good work
-    - It's time to plant crops
   - Name: EndGame
     IsPlayerDialogue: 0
     Phrases:
